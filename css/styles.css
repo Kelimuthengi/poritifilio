@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* <============== LANDING PAE STARTS HERE ==============> */
+.landingpage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.leftsidelandingpage {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftsidelandingpage div {
+  width: 70%;
+}
+.leftsidelandingpage h4 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 130%;
+  margin-bottom: 1rem;
+}
+.leftsidelandingpage h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 180%;
+  margin-bottom: 1rem;
+}
+.leftsidelandingpage p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.leftsidelandingpage a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f3b028;
+  padding: 0.7rem;
+  color: white;
+  border-radius: 1.2rem;
+}
+.rightsidelandingpage {
+  height: 100vh;
+  width: 50%;
+   background-image: url(/images/hefepc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MEDIA QEURIES FOR SMALLER DEVICES */
+@media screen and (max-width: 800px) {
+  .landingpage {
+    height: 100vh;
+    width: 100%;
+    display: block;
+  }
+  .leftsidelandingpage {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightsidelandingpage {
+    height: 50vh;
+    width: 100%;
+    background-image: url(/images/hefepc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .leftsidelandingpage div {
+    width: 70%;
+  }
+  .leftsidelandingpage h4 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .leftsidelandingpage h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 120%;
+    margin-bottom: 0.5rem;
+  }
+  .leftsidelandingpage p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .leftsidelandingpage a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f3b028;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 1.2rem;
+  }
+}
+
+/* <============== LANDING PAGE ENDS HERE ==============> */
+
+/* <============= ABOUT PAGE STARTS HERE ==================> */
+.aboutholder {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(211, 211, 211);
+  /* background-color: whitesmoke; */
+}
+.leftsideabout {
+  height: 100vh;
+  width: 20%;
+}
+.leftsideaboutlogo {
+  height: 30vh;
+     background-image: url(/images/hefepc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leftsideaboutdetails {
+  height: 70vh;
+  background-color: #f5b32f;
+  display: flex;
+  justify-content: center;
+}
+.leftsideaboutdetails ul {
+  padding: 1.5rem;
+}
+.leftsideaboutdetails ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+.leftsideaboutdetails li a {
+  text-decoration: none;
+  color: black;
+}
+.rightsideabout {
+  height: 100vh;
+  width: 80%;
+  padding: 2rem;
+}
+.rightsideaboutintro {
+  border: 1px solid grey;
+  box-shadow: 2px 2px whitesmoke;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+.rightsideaboutpara h5 {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+.rightsideaboutpara p {
+  margin-bottom: 3rem;
+}
+.rightsideaboutcontents {
+  display: flex;
+  width: 100%;
+  /* height: 40vh; */
+}
+.rightsidemaincontents {
+  width: 70%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+.rightsidemincont {
+  width: 18rem;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+.rightsidemincont h5 {
+  color: #f3b028;
+  font-size: 25px;
+}
+.rightsidemincont p {
+  color: white;
+}
+.rightsideminicontents {
+  width: 30%;
+}
+.whatido {
+  display: flex;
+  /* width: 40%; */
+}
+.whatido p {
+  font-size: 10px;
+}
+.whatido img {
+  height: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutholder {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-color: rgb(211, 211, 211);
+    /* background-color: whitesmoke; */
+  }
+  .rightsideabout {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+  }
+  .rightsideaboutintro {
+    border: 1px solid grey;
+    box-shadow: 2px 2px whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
+  .rightsideaboutcontents {
+    display: block;
+    width: 100%;
+    /* height: 40vh; */
+  }
+  .rightsidemaincontents {
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin-bottom: 1.2rem;
+  }
+  .rightsideminicontents {
+    width: 100%;
+  }
+}
+
+/* <============= ABOUT PAGE ENDS HERE ==================> */
+
+/* <========== RESUME STARTS ====================> */
+.resumeholder {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(221, 221, 221);
+}
+.resumeholder h2 {
+  padding-left: 1rem;
+}
+.rightsideholders {
+  padding: 2rem;
+  width: 80%;
+}
+.resumeintro {
+  /* border: 1px solid red; */
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid grey;
+  box-shadow: 2px 2px whitesmoke;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+.eductaiondetails {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid grey;
+}
+.educationsubdetails {
+  width: 15rem;
+  padding: 1rem;
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+  overflow: auto;
+  height: 15rem;
+}
+.educationsubdetails h4 {
+  background-color: #f3b028;
+  width: fit-content;
+  color: white;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  margin-bottom: 0.4rem;
+}
+.educationsubdetails h5 {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+.experiencedetailsholder {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.experienceholders {
+  width: 15rem;
+  padding: 1rem;
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+}
+.experienceholders h4 {
+  background-color: #f3b028;
+  width: fit-content;
+  color: white;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  margin-bottom: 0.4rem;
+}
+.experienceholders h5 {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+/* small devices */
+@media screen and (max-width: 600px) {
+  .resumeholder {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background-color: rgb(221, 221, 221);
+  }
+  .experiencedetailsholder {
+    display: block;
+    /* margin-bottom: 1.5rem; */
+  }
+  .rightsideholders {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+/* <========== RESUME ENDS ====================> */
+
+/* <============== PORTIFOLIO  STARTS ==================> */
+.portifolioholder {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.portifoliomainsection {
+  padding: 2rem;
+  width: 80%;
+}
+.portifoliointro {
+  text-align: center;
+  border: 3px solid grey;
+  border-style: dotted;
+  box-shadow: 2px 2px whitesmoke;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.portiliocontrols ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.portiliocontrols ul li {
+  list-style-type: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.allprojectsrow {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+  height: 60vh;
+  overflow: auto;
+}
+.allprojominiprojo {
+  width: 15rem;
+  flex-grow: 1;
+  padding: 1rem;
+  /* box-shadow: 2px 2px #F3B028; */
+  margin: 0.2rem;
+  background-color: black;
+}
+.allprojominiprojo p {
+  color: white;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+.allprojominiprojo h5 {
+  color: white;
+}
+.allprojominiprojo a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: .3rem;
+  
+}
+.nodeprojorows {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+}
+.nodeprojocard {
+  width: 15rem;
+  flex-grow: 1;
+  padding: 2rem;
+  /* box-shadow: 2px 2px #F3B028; */
+  margin: 0.2rem;
+  background-color: black;
+  color: white;
+  height: fit-content;
+}
+.fa-node-js {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f5b32f;
+}
+.nodeprojocard p {
+  color: #f3b028;
+  margin-top: 1rem;
+}
+.nodeprojocard a {
+      color: #ffffff;
+  text-decoration: none;
+  margin-top: .3rem;
+}
+.firebaseprojo {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+}
+.firebaseprojocards {
+  width: 15rem;
+  flex-grow: 1;
+  padding: 2rem;
+  /* box-shadow: 2px 2px #F3B028; */
+  margin: 0.2rem;
+  background-color: black;
+  color: white;
+}
+.fa-js {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f5b32f;
+}
+.firebaseprojocards p {
+  color: #f3b028;
+  margin-top: 1rem;
+}
+.firebaseprojocards a {
+   color: #ffffff;
+  text-decoration: none;
+  margin-top: .3rem;
+
+}
+.reactprojectrows {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+}
+.reactprojectscard {
+  width: 15rem;
+  flex-grow: 1;
+  padding: 2rem;
+  /* box-shadow: 2px 2px #F3B028; */
+  margin: 0.2rem;
+  background-color: black;
+  color: white;
+}
+.fa-react {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f5b32f;
+}
+.reactprojectscard p {
+  color: #f3b028;
+  margin-top: 1rem;
+}
+.reactprojectscard a {
+    color: #ffffff;
+  text-decoration: none;
+  margin-top: .3rem;
+
+}
+.bootstrapprojorows {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* margin: 0 auto; */
+  padding-top: 3rem;
+}
+.bootstrapprojocard {
+  width: 15rem;
+  flex-grow: 1;
+  padding: 2rem;
+  /* box-shadow: 2px 2px #F3B028; */
+  margin: 0.2rem;
+  background-color: black;
+  color: white;
+}
+.bootstrapprojocard a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: .3rem;
+
+}
+.fa-bootstrap {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f5b32f;
+}
+.bootstrapprojocard p {
+  color: #f3b028;
+  margin-top: 1rem;
+}
+
+/* <========= SMALL SCREEN ============> */
+@media screen and (max-width: 600px) {
+  .leftsideabout {
+    width: 100%;
+    height: 50vh;
+  }
+  .leftsideaboutlogo {
+    height: 20vh;
+   background-image: url(/images/hefepc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leftsideaboutdetails {
+    height: fit-content;
+    background-color: #f5b32f;
+    display: flex;
+    justify-content: center;
+  }
+  .leftsideaboutdetails ul {
+    padding: 1rem;
+  }
+  .leftsideaboutdetails ul li {
+    list-style-type: none;
+    padding: 0.4rem;
+  }
+  .leftsideaboutdetails li a {
+    text-decoration: none;
+    color: black;
+  }
+  .portifolioholder {
+    /* height: 50vh; */
+    width: 100%;
+    display: block;
+  }
+
+  .portifoliomainsection {
+    padding: 2rem;
+    width: 100%;
+    height: 50vh;
+    overflow: auto;
+  }
+  .portifoliointro {
+    padding: 1.2rem;
+    text-align: center;
+    border: 3px solid grey;
+    border-style: dotted;
+    box-shadow: 2px 2px whitesmoke;
+    padding: 0.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .portiliocontrols ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .portiliocontrols ul li {
+    list-style-type: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 3px;
+  }
+  .allprojectsrow {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    padding-top: 3rem;
+    height: 60vh;
+    overflow: auto;
+  }
+  .allprojominiprojo {
+    width: 15rem;
+    flex-grow: 1;
+    padding: 1rem;
+    /* box-shadow: 2px 2px #F3B028; */
+    margin: 0.2rem;
+    background-color: black;
+  }
+  .allprojominiprojo p {
+    color: white;
+    margin-top: rem;
+  }
+  .allprojominiprojo h5 {
+    color: white;
+  }
+  .nodeprojorows {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    padding-top: 3rem;
+  }
+  .nodeprojocard {
+    width: 15rem;
+    flex-grow: 1;
+    padding: 2rem;
+    /* box-shadow: 2px 2px #F3B028; */
+    margin: 0.2rem;
+    background-color: black;
+    color: white;
+    height: fit-content;
+  }
+  .fa-node-js {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f5b32f;
+  }
+  .nodeprojocard p {
+    color: #f3b028;
+    margin-top: 1rem;
+  }
+  .firebaseprojo {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    padding-top: 3rem;
+  }
+  .firebaseprojocards {
+    width: 15rem;
+    flex-grow: 1;
+    padding: 2rem;
+    /* box-shadow: 2px 2px #F3B028; */
+    margin: 0.2rem;
+    background-color: black;
+    color: white;
+  }
+  .fa-js {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f5b32f;
+  }
+  .firebaseprojocards p {
+    color: #f3b028;
+    margin-top: 1rem;
+  }
+  .reactprojectrows {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    padding-top: 3rem;
+  }
+  .reactprojectscard {
+    width: 15rem;
+    flex-grow: 1;
+    padding: 2rem;
+    /* box-shadow: 2px 2px #F3B028; */
+    margin: 0.2rem;
+    background-color: black;
+    color: white;
+  }
+  .fa-react {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f5b32f;
+  }
+  .reactprojectscard p {
+    color: #f3b028;
+    margin-top: 1rem;
+  }
+  .bootstrapprojorows {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    /* margin: 0 auto; */
+    padding-top: 3rem;
+  }
+  .bootstrapprojocard {
+    width: 15rem;
+    flex-grow: 1;
+    padding: 2rem;
+    /* box-shadow: 2px 2px #F3B028; */
+    margin: 0.2rem;
+    background-color: black;
+    color: white;
+  }
+  .fa-bootstrap {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f5b32f;
+  }
+  .bootstrapprojocard p {
+    color: #f3b028;
+    margin-top: 1rem;
+  }
+}
+/* <============== PORTIFOLIO  ENDS ==================> */
+
+/* <============== CONTACT STARTS ==============> */
+.contactholder {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.rightsidesection {
+  padding: 2rem;
+  width: 80%;
+}
+.contactintro {
+  padding: 1.2rem;
+  text-align: center;
+  border: 3px solid grey;
+  border-style: dotted;
+  box-shadow: 2px 2px whitesmoke;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.contactdetailsholder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactparagraph {
+  padding: 3rem;
+  background-color: black;
+  color: #f3b028;
+  margin: 0.5rem;
+}
+.contactlogoandcontacts {
+  background-color: black;
+  margin: 0.5rem;
+  padding: 2rem;
+  width: 20rem;
+  flex-grow: 1;
+}
+.contactlogoandcontacts p {
+  color: white;
+}
+.fa-envelope {
+  color: #f3b028;
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+.fa-phone {
+  color: #f3b028;
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* <======= SMALL SCREEN =======> */
+@media screen and (max-width: 600px) {
+  .leftsideabout {
+    width: 100%;
+    height: 50vh;
+  }
+  .leftsideaboutlogo {
+    height: 20vh;
+    background-image: url(/images/hefepc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leftsideaboutdetails {
+    height: fit-content;
+    background-color: #f5b32f;
+    display: flex;
+    justify-content: center;
+  }
+  .leftsideaboutdetails ul {
+    padding: 1rem;
+  }
+  .leftsideaboutdetails ul li {
+    list-style-type: none;
+    padding: 0.4rem;
+  }
+  .leftsideaboutdetails li a {
+    text-decoration: none;
+    color: black;
+  }
+  .contactholder {
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  .rightsidesection {
+    padding: 1rem;
+    height: 50vh;
+    width: 100%;
+  }
+  .contactintro {
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid grey;
+    border-style: dotted;
+    box-shadow: 2px 2px whitesmoke;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .contactdetailsholder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contactparagraph {
+    padding: 3rem;
+    background-color: black;
+    color: #f3b028;
+    margin: 0.5rem;
+  }
+  .contactlogoandcontacts {
+    background-color: black;
+    margin: 0.5rem;
+    padding: 2rem;
+    width: 20rem;
+    flex-grow: 1;
+  }
+  .contactlogoandcontacts p {
+    color: white;
+  }
+  .fa-envelope {
+    color: #f3b028;
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+  .fa-phone {
+    color: #f3b028;
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+}
+/* <============== CONTACT ENDS ==============> */

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <!-- fontawesome cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/images/star.png" type="image/png" />
+  </head>
+  <body>
+    <section class="portifolioholder">
+      <div class="leftsideabout">
+        <div class="leftsideaboutlogo"></div>
+
+        <div class="leftsideaboutdetails">
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li>
+              <a href="/about.html" style="color: white">ABOUT ME</a>
+            </li>
+            <li><a href="/resume.html">RESUME</a></li>
+            <li><a href="/portifolio.html">PORTIFOLIO</a></li>
+            <!-- <li><a href="#">TESTIMONIALS</a></li> -->
+            <li><a href="/contact.html">CONTACTS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="portifoliomainsection">
+        <div class="portifoliointro">PORTIFOLIO</div>
+
+        <div class="portiliocontrols">
+          <ul>
+            <li id="allprojectsli">ALL PROJECTS</li>
+            <li id="nodeprojectsli">NODE API</li>
+            <li id="firebaseprojectsli">FIREBASE</li>
+            <li id="reactprojectsli">REACT</li>
+            <li id="bootstrapli">BOOTSTRAP</li>
+          </ul>
+        </div>
+
+        <div class="allprojectsrow" id="allprojectsdiv">
+          <!-- <div class="allprojominiprojo">
+            <i class="fa-brands fa-node-js"></i>
+            <h5>AUTHENTICATION WITH NODE</h5>
+            <p>
+              A Restful API build with node js that utilizes Json Webtoken for
+              authenitcation and bcrypt for hashing passwords
+            </p>
+            <a
+              href="https://kelis-application.herokuapp.com/api-docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View project</a
+            >
+          </div> -->
+
+          <div class="allprojominiprojo">
+            <i class="fa-brands fa-node-js"></i>
+            <h5>CRUD JOBS API</h5>
+            <p>
+              A Restful API build with node js that utilizes Json Webtoken for
+              authenitcation and bcrypt for hashing passwords. It utilizes
+              mongoose for model validation and is connected to mongodb atlas
+            </p>
+            <a
+              href="https://keli-jobs.herokuapp.com/api-docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >view project</a
+            >
+          </div>
+
+          <div class="allprojominiprojo">
+            <i class="fa-brands fa-js"></i>
+            <h5>OFFICE-MANAGEMENT-SYSTEM</h5>
+            <p>
+              This is an office mnagement system that runs on vanilla javascript
+              and firebase
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/office-management-systems"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View more</a
+            >
+          </div>
+
+          <div class="allprojominiprojo">
+            <i class="fa-brands fa-js"></i>
+            <h5>LAW-FRIM-MANAGEMENT-SYSTEM</h5>
+            <p>
+              This is an office mnagement system that runs on vanilla javascript
+              and firebase
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/lawfirm-management-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
+          </div>
+
+          <div class="allprojominiprojo">
+            <i class="fa-brands fa-bootstrap"></i>
+            <h5>GOSPEL REVIVAL CENTER WEBSITE</h5>
+            <p>
+              This is a church website that has been built with bootstrap
+              components
+            </p>
+            <a
+              href="https://newgrcwebsite.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
+          </div>
+
+          <div class="allprojominiprojo">
+            <i class="fa-brands fa-react"></i>
+            <h5>E-COMMERCE APPLICATION</h5>
+            <p>
+              E-commerce application that runs on firebase and React. It helped
+              my to learn Es6 Javascript and alos have a mastery of React hooks
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/E-commerce"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="nodeprojorows" style="display: none" id="nodeprojectsdiv">
+          <div class="nodeprojocard">
+            <i class="fa-brands fa-node-js"></i>
+            <h5>AUTHENTICATION WITH NODE</h5>
+            <p>
+              A Restful API build with node js that utilizes Json Webtoken for
+              authenitcation and bcrypt for hashing passwords
+            </p>
+            <a
+              href="https://kelis-application.herokuapp.com/api-docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View project</a
+            >
+          </div>
+
+          <div class="nodeprojocard">
+            <i class="fa-brands fa-node-js"></i>
+            <h5>CRUD JOBS API</h5>
+            <p>
+              A Restful API build with node js that utilizes Json Webtoken for
+              authenitcation and bcrypt for hashing passwords. It utilizes
+              mongoose for model validation and is connected to mongodb atlas
+            </p>
+            <a
+              href="https://keli-jobs.herokuapp.com/api-docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >view project</a
+            >
+          </div>
+
+          <!-- <div class="nodeprojocard">
+            <i class="fa-brands fa-node-js"></i>
+            <h5>PROJECT NAME</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+              voluptatum!
+            </p>
+          </div> -->
+        </div>
+
+        <div
+          class="firebaseprojo"
+          id="firebaseprojectsdiv"
+          style="display: none"
+        >
+          <div class="firebaseprojocards">
+            <i class="fa-brands fa-js"></i>
+            <h5>OFFICE-MANAGEMENT-SYSTEM</h5>
+            <p>
+              This is an office mnagement system that runs on vanilla javascript
+              and firebase
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/office-management-systems"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View more</a
+            >
+          </div>
+
+          <div class="firebaseprojocards">
+            <i class="fa-brands fa-js"></i>
+            <h5>LAW-FRIM-MANAGEMENT-SYSTEM</h5>
+            <p>
+              This is an office mnagement system that runs on vanilla javascript
+              and firebase
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/lawfirm-management-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
+          </div>
+
+          <!-- <div class="firebaseprojocards">
+            <i class="fa-brands fa-js"></i>
+            <h5>PROJECT NAME</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+              voluptatum!
+            </p>
+          </div> -->
+        </div>
+
+        <div
+          class="reactprojectrows"
+          id="reactprojectsdiv"
+          style="display: none"
+        >
+          <div class="reactprojectscard">
+            <i class="fa-brands fa-react"></i>
+            <h5>E-COMMERCE APPLICATION</h5>
+            <p>
+              E-commerce application that runs on firebase and React. It helped
+              my to learn Es6 Javascript and alos have a mastery of React hooks
+            </p>
+            <a
+              href="https://github.com/Kelimuthengi/E-commerce"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="bootstrapprojorows" id="bootstrapdiv" style="display: none">
+          <div class="bootstrapprojocard">
+            <i class="fa-brands fa-bootstrap"></i>
+            <h5>GOSPEL REVIVAL CENTER WEBSITE</h5>
+            <p>
+              This is a church website that has been built with bootstrap
+              components
+            </p>
+            <a href="https://newgrcwebsite.web.app/" target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/images/star.png" type="image/png" />
+    <script src="/js/portfilio.js"></script>
+  </body>
+</html>
